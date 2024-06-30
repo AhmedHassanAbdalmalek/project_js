@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Character and Image Display</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52835325e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+   
+    <style>
+        body
+        {
+            background-image: url("Premium Vector _ Template with cartoon of happy kids on the train_.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            /* background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%); */
+        }
+       .center{
+            
+  position: absolute;
+  top: 20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+  .center1{
+            
+            position: absolute;
+            top: 65%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            }
+       
+        #charDisplay, #imgDisplay {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .char-btn {
+            cursor: pointer;
+            font-size: 24px;
+            margin: 5px;
+        }
+        img{width: 300px;
+        height: 300px;}
+    </style>
+</head>
+<body>
+    
+    <div class="container " >
+        <div class="row center">
+            <div class="col-md-12  ">
+                <input type="number" id="numInput" placeholder="Enter a number">
+                <button id="generateBtn">Generate Characters</button>
+                <button id="ResetBtn">Reset</button>
+                
+            </div>
+        </div>
+      <div class="row center1 ">
+            <div class="col-md-12  ">
+                <div id="charDisplay"></div>
+                <div id="imgDisplay"class="img"></div>
+            </div>
+        </div>
+
+        
+    
+       
+    </div>
+   
+
+    <script src="project.js"></script>
+</body>
+</html>
